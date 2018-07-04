@@ -3,30 +3,6 @@
 
 with haskellLib; self: super: {
 
-  # core packages
-  "array" = null;
-  "base" = null;
-  "binary" = null;
-  "bytestring" = null;
-  "containers" = null;
-  "deepseq" = null;
-  "directory" = null;
-  "filepath" = null;
-  "ghc-boot" = null;
-  "ghc-boot-th" = null;
-  "ghc-prim" = null;
-  "ghci" = null;
-  "hoopl" = null;
-  "hpc" = null;
-  "integer-gmp" = null;
-  "pretty" = null;
-  "process" = null;
-  "rts" = null;
-  "template-haskell" = null;
-  "terminfo" = null;
-  "time" = null;
-  "transformers" = null;
-  "unix" = null;
   # break cycle: HUnit call-stack nanospec hspec hspec-core ansi-terminal colour test-framework ansi-wl-pprint xml text test-framework-hunit test-framework-quickcheck2 async hspec-expectations hspec-meta quickcheck-io silently temporary base-compat exceptions tasty clock tasty-quickcheck tasty-hunit optparse-applicative regex-tdfa parsec hspec-discover stringbuilder
   "stringbuilder" = dontCheck super.stringbuilder;
   "hspec-discover" = dontCheck super.hspec-discover;
